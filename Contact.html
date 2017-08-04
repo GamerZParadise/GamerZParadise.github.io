@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="palm.ico" />
+  <title>GamerZ Paradise</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- start of the sheet -->
+    <div class="smallSheet">
+        <div class="heading">
+            <!--logo Image -->
+            <div class="logo">
+                <a href="https://gamerzparadise.github.io/"><img src="GamerZ Paradise Logo.png" alt="Logo" width="319.875" height="103.5"></a>
+                    </div>
+            <!-- Info About the company -->
+            <div class="location">
+                <p>(410) 679-1136<br/>
+                <a href="https://www.google.com/maps/place/Gamerz+Paradise/@39.4211316,-76.3740659,17z/data=!4m13!1m7!3m6!1s0x89c7e3fd9d195ce9:0x23e95448b04ba015!2s1000+Joppa+Farm+Rd,+Joppa,+MD+21085!3b1!8m2!3d39.4211316!4d-76.3718719!3m4!1s0x0:0x86355cd39fbe4bba!8m2!3d39.4208939!4d-76.3721319">1000 Joppa Farm Rd, Joppa, MD 21085</a><br/>Thursday, Friday, Saturday, and Sunday 10am-5pm<br/>@TheRealGamerzParadise<br/><p/>
+            </div>
+            <!-- Search -->
+            <div class="searchBar">
+                <form>
+                    <input type="text" name="Search">
+                    <button type="button">Search</button>
+                </form>
+            </div>
+        </div>
+        <!-- start of the navigation bar -->
+        <div class="navigationBar">
+            <div class="dropdown">
+                <button class="dropbtn">Systems &amp; Accessories</button>
+                <div class="dropdown-content">
+                    <a href="https://gamerzparadise.github.io/SystemNintendo">Nintendo</a>
+                    <a href="https://gamerzparadise.github.io/SystemSega">Sega</a>
+                    <a href="https://gamerzparadise.github.io/SystemAtari">Atari</a>
+                    <a href="https://gamerzparadise.github.io/SystemMicrosoft">Microsoft</a>
+                    <a href="https://gamerzparadise.github.io/SystemSony">Sony</a>
+                    <a href="https://gamerzparadise.github.io/SystemOther">Other</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Games</button>
+                <div class="dropdown-content">
+                    <a href="https://gamerzparadise.github.io/GamesNintendo">Nintendo</a>
+                    <a href="https://gamerzparadise.github.io/GamesSega">Sega</a>
+                    <a href="https://gamerzparadise.github.io/GamesAtari">Atari</a>
+                    <a href="https://gamerzparadise.github.io/GamesMicrosoft">Microsoft</a>
+                    <a href="https://gamerzparadise.github.io/GamesSony">Sony</a>
+                    <a href="https://gamerzparadise.github.io/GamesOther">Other</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Music &amp; Movies</button>
+                <div class="dropdown-content">
+                    <a href="https://gamerzparadise.github.io/VHS">VHS</a>
+                    <a href="https://gamerzparadise.github.io/DVD">DVD</a>
+                    <a href="https://gamerzparadise.github.io/BluRay">Blu-Ray</a>
+                    <a href="https://gamerzparadise.github.io/CD">CD</a>
+                    <a href="https://gamerzparadise.github.io/Vinyl">Vinyl</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">More</button>
+                <div class="dropdown-content">
+                    <a href="https://gamerzparadise.github.io/ActionFigures">Action Figures</a>
+                    <a href="https://gamerzparadise.github.io/Electronics">Electronics</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="https://gamerzparadise.github.io/Contact"><button class="dropbtn">Reserve &amp; Contact </button></a>
+            </div>
+        <!-- end of the navigation bar -->
+        </div>
+        <form method="post" name="myemailform" action="form-to-email.php">
+            <p>
+            <label for='name'>Enter Name: </label><br>
+            <input type="text" name="name">
+                </p>
+                <p>
+                <label for='email'>Enter Email Address:</label><br>
+                <input type="text" name="email">
+                    </p>
+                    <p>
+                    <label for='message'>Enter Message:</label> <br>
+                    <textarea name="message"></textarea>
+                    </p>
+                    <input type="submit" name='submit' value="submit">
+        </form>
+        <script language="JavaScript">
+            // Code for validating the form
+            // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+            // for details
+            var frmvalidator  = new Validator("myemailform");
+            frmvalidator.addValidation("name","req","Please provide your name");
+            frmvalidator.addValidation("email","req","Please provide your email");
+            frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+            </script>
+        <p>
+        <a href='http://www.html-form-guide.com/email-form/php-form-to-email.html'
+            >PHP form to email article page</a>
+            </p>
+
+
+
+    <!-- end of the sheet -->
+    </div>
+</body>
+</html>
