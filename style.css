@@ -12,7 +12,7 @@ body{
     margin-left: 10%;
     padding-top: 10px;
     z-index: 1;
-    width: 1000px;
+    width: 1010px;
 
 }
 .heading{
@@ -97,4 +97,6 @@ body{
     font-size: 30px;
     font-weight: bold;
     font-family: 'Sedgwick Ave', cursive;
+    background-color: #ffffff;
+}
 
