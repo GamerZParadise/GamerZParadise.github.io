@@ -1,6 +1,6 @@
 <?php
     $emailSubject='Crazy PHP Scripting!';
-    $webmaster = 'order@uniment1.com';
+    $webMaster = 'markymark5127@gmail.com';
     
     $emailField = $_POST['email'];
     $nameField = $_POST['name'];
