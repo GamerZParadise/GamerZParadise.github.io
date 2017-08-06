@@ -118,3 +118,33 @@ body{
     display: inline-block;
     font-size: 16px;
 }
+input[type=text] {
+    background-color: transparent;
+    box-shadow: 0 0px 0px transparent;
+    padding: 5px;
+    border: 3px solid #FFFFFF;
+    color: #FFFFFF;
+    margin: 0 0 5px;
+    width: 80%;
+    min-height: 36px;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+input[type=text]:focus {
+    border: 2px solid blue;
+}
+textarea{
+    background-color: transparent;
+    box-shadow: 0 0px 0px transparent;
+    padding: 5px;
+    border: 3px solid #FFFFFF;
+    color: #FFFFFF;
+    margin: 0 0 5px;
+    width: 80%;
+    min-height: 36px;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+textarea:focus{
+    border: 2px solid blue;
+}
