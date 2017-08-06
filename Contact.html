@@ -3,8 +3,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="palm.ico" />
-  <title>GamerZ Paradise</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <title>GamerZ Paradise</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <!-- start of the sheet -->
@@ -48,7 +48,7 @@
                     <a href="https://gamerzparadise.github.io/GamesAtari">Atari</a>
                     <a href="https://gamerzparadise.github.io/GamesMicrosoft">Microsoft</a>
                     <a href="https://gamerzparadise.github.io/GamesSony">Sony</a>
-                    <a href="https://gamerzparadise.github.io/GamesOth">Other</a>
+                    <a href="https://gamerzparadise.github.io/GamesOther">Other</a>
                 </div>
             </div>
 
@@ -74,21 +74,53 @@
             </div>
         <!-- end of the navigation bar -->
         </div>
-        <form method="post" name="myemailform" action="Contact.php">
-            <p>
-                <label for='name'>Enter Name: </label><br>
-                <input type="text" name="name">
-            </p>
-            <p>
-                <label for='email'>Enter Email Address:</label><br>
-                <input type="text" name="email">
-            </p>
-            <p>
-                    <label for='message'>Enter Message:</label> <br>
-                    <textarea name="message"></textarea>
-            </p>
-                    <input type="submit" name='submit' value="submit">
-        </form>
+        <div class="contact">
+            <style>
+                input[type=text] {
+                    background-color: transparent;
+                    box-shadow: 0 0px 0px transparent;
+                    padding: 5px;
+                    border: 3px solid #FFFFFF;
+                    color: #FFFFFF;
+                    margin: 0 0 5px;
+                    width: 80%;
+                    min-height: 36px;
+                    box-sizing: border-box;
+                    border-radius: 0;
+                }
+                input[type=text]:focus {
+                    border: 2px solid blue;
+                }
+                textarea{
+                    background-color: transparent;
+                    box-shadow: 0 0px 0px transparent;
+                    padding: 5px;
+                    border: 3px solid #FFFFFF;
+                    color: #FFFFFF;
+                    margin: 0 0 5px;
+                    width: 80%;
+                    min-height: 36px;
+                    box-sizing: border-box;
+                    border-radius: 0;
+                }
+                textarea:focus{
+                    border: 2px solid blue;
+                }
+            </style>
+            
+            <h1>Reserve &amp; Contact</h1>
+            <p>If you have an issue, concern or you want to reserve please fill out the form below and we will hold your item for 48 hours</br>or feel free contact us via phone at (410) 679-1136 or stop by we are open Thursday, Friday, Saturday, and Sunday from 10am till 5pm</p>
+            <form method="post" name="myemailform" action="Contact.php">
+                <p>
+                    <input type="text" placeholder="Name" name="name">
+                    <input type="text" placeholder="Email" name="email">
+                </p>
+                <p>
+                    <textarea name="message" placeholder="Message" rows="15"cols="40"></textarea>
+                </p>
+                <input type="submit" name='submit' value="submit">
+            </form>
+        </div>
         <script language="JavaScript">
             // Code for validating the form
             // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
@@ -99,9 +131,7 @@
             frmvalidator.addValidation("email","email","Please enter a valid email address"); 
             </script>
         <p>
-        <a href='http://www.html-form-guide.com/email-form/php-form-to-email.html'
-            >PHP form to email article page</a>
-            </p>
+       
 
 
 
