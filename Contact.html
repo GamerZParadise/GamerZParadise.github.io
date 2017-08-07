@@ -97,7 +97,7 @@
             //if "email" variable is not filled out, display the form
             else  {
                 ?>
-            <form method="post" name="email" action="Contact.php">
+            <form method="post">
                 <p>
                     <input type="text" placeholder="Email" name="email">
                     <input type="text" placeholder="Subject" name="subject">
@@ -105,7 +105,7 @@
                 <p>
                     <textarea name="message" placeholder="Message" rows="15"cols="40"></textarea>
                 </p>
-                <input type="submit" name='submit' value="Submit">
+                <input type="submit"value="Submit">
             </form>
             <?php
                 }
