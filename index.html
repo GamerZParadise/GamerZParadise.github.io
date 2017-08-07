@@ -75,7 +75,26 @@
         <!-- end of the navigation bar -->
         </div>
         <div class="image">
-            <img src="gamerzParadise.jpg" alt="Store front" width="768" height="434.25">
+            <div class="Slides">
+                <img class="mySlides" src="gamerzParadise.jpg" width=100%>
+                <img class="mySlides" src="Reviews.png" width=100%>
+                <img class="mySlides" src="gamerzParadiseSign.jpg" width=100%>
+            </div>
+            <script>
+                var slideIndex = 0;
+                carousel();
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > x.length) {slideIndex = 1}
+                    x[slideIndex-1].style.display = "block"; 
+                    setTimeout(carousel, 5000); // Change image every 2 seconds
+                }
+            </script>
         </div>
     <!-- end of the sheet -->
     </div>
