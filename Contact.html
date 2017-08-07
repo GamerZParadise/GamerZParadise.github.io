@@ -77,16 +77,39 @@
         <div class="contact">
             <h1>Reserve &amp; Contact</h1>
             <p>If you have an issue, concern or you want to reserve please fill out the form below and we will hold your item for 48 hours</br>or feel free contact us via phone at (410) 679-1136 or stop by we are open Thursday, Friday, Saturday, and Sunday from 10am till 5pm</p>
-            <form method="post" name="myemailform" action="Contact.php">
+            <?php
+                //if "email" variable is filled out, send email
+                if (isset($_REQUEST['email']))  {
+                    
+                    //Email information
+                    $admin_email = "markymark5127@gmail.com";
+                    $email = $_REQUEST['email'];
+                    $subject = $_REQUEST['subject'];
+                    $message = $_REQUEST['message'];
+                    
+                    //send email
+                    mail($admin_email, "$subject", $comment, "From:" . $email);
+                    
+                    //Email response
+                    echo "Thank you for contacting us!";
+                }
+            
+            //if "email" variable is not filled out, display the form
+            else  {
+                ?>
+            <form method="post" name="email" action="Contact.php">
                 <p>
-                    <input type="text" placeholder="Name" name="name">
                     <input type="text" placeholder="Email" name="email">
+                    <input type="text" placeholder="Subject" name="subject">
                 </p>
                 <p>
                     <textarea name="message" placeholder="Message" rows="15"cols="40"></textarea>
                 </p>
                 <input type="submit" name='submit' value="Submit">
             </form>
+            <?php
+                }
+                ?>
         </div>
         <script language="JavaScript">
             // Code for validating the form
