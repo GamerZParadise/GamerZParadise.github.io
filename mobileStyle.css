@@ -39,6 +39,14 @@ body{
     width:100%;
     display:block;
 }
+.sales{
+    
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Sedgwick Ave', cursive;
+    background-color: #ffffff;
+}
 ul {
     list-style-type: none;
     margin: 0;
