@@ -77,39 +77,17 @@
         <div class="contact">
             <h1>Reserve &amp; Contact</h1>
             <p>If you have an issue, concern or you want to reserve an item, please fill out the form below and we will hold your item for 48 hours.</br>Feel free to contact us via phone at (410) 679-1136 or stop by our retail location.</br>Our buisness hours are Thursday, Friday, Saturday, and Sunday from 10am till 5pm.</p>
-            <?php
-                //if "email" variable is filled out, send email
-                if (isset($_REQUEST['email']))  {
-                    
-                    //Email information
-                    $admin_email = "markymark5127@gmail.com";
-                    $email = $_REQUEST['email'];
-                    $subject = $_REQUEST['subject'];
-                    $message = $_REQUEST['message'];
-                    
-                    //send email
-                    mail($admin_email, $subject, $message, "From:" . $email);
-                    
-                    //Email response
-                    echo "Thank you for contacting us!";
-                }
             
-            //if "email" variable is not filled out, display the form
-            else  {
-                ?>
-            <form method="post">
+            <form name="contactform" method="post" action="send_form_email.php">
                 <p>
-                    <input type="text" placeholder="Email" name="email">
+                    <input type="text" placeholder="Email Address" name="email">
                     <input type="text" placeholder="Subject" name="subject">
                 </p>
                 <p>
                     <textarea name="message" placeholder="Message" rows="15"cols="40"></textarea>
                 </p>
-                <input type="submit"value="Submit">
+                <input type="submit"value="Submit"> <a href="http://www.gamerzparadise.net/Contact.html">Email Form</a>
             </form>
-            <?php
-                }
-                ?>
         </div>
         <script language="JavaScript">
             // Code for validating the form
