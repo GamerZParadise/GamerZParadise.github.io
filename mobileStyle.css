@@ -1,7 +1,12 @@
 body{
     background-color: #818181;
+    text-align: center;
+}
+.sidebarButton{
+    text-align: left;
 }
 .sidenav {
+    text-align: left;
     height: 100%;
     width: 0;
     position: fixed;
@@ -40,7 +45,6 @@ body{
     display:block;
 }
 .sales{
-    
     display: inline-block;
     font-size: 30px;
     font-weight: bold;

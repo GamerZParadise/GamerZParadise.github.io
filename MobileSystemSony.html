@@ -14,8 +14,9 @@
             <a class="barItem" href="#">More</a>
             <a class="barItem" href="#">Reserve &amp; Contact</a>
         </div>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        
+        <div id="sidebarButton" class="sidebarButton">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
         <script>
             function openNav() {
                 document.getElementById("mySidenav").style.width = "250px";
@@ -30,27 +31,40 @@
             </div>
         </header>
         <hr>
-        <div class="Slides">
-            <img class="mySlides" src="gamerzParadise.jpg" width=100%>
-            <img class="mySlides" src="Reviews.png" width=100%>
-            <img class="mySlides" src="gamerzParadiseSign.jpg" width=100%>
-        </div>
-        <script>
-            var slideIndex = 0;
-            carousel();
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > x.length) {slideIndex = 1}
-                x[slideIndex-1].style.display = "block";
-                setTimeout(carousel, 5000); // Change image every 2 seconds
-            }
-        </script>
-        </div>
+        <div class="sales">
+            <img src="Playstation.png" alt="PS1" width="240" height="140">
+                <p>$69.99</p>
+                </div>
+        <br/>
+        <hr>
+        <div class="sales">
+            <img src="PS2.jpg" alt="PS2" width="240" height="140">
+                <p>$69.99</p>
+                </div>
+        <br/>
+        <hr>
+        <div class="sales">
+            <img src="PS3.jpg" alt="PS3" width="240" height="140">
+                <p>$69.99</p>
+                </div>
+        <br/>
+        <hr>
+        <div class="sales">
+            <img src="PS4.jpg" alt="PS4" width="240" height="140">
+                <p>$69.99</p>
+                </div>
+        <br/>
+        <hr>
+        <div class="sales">
+            <img src="PSP.jpg" alt="PSP" width="240" height="140">
+                <p>$69.99</p>
+                </div>
+        <br/>
+        <hr>
+        <div class="sales">
+            <img src="PSVita.jpg" alt="PSVita" width="240" height="140">
+                <p>$69.99</p>
+                </div>
         
         <footer class="footing">
             <small>&copy; Copyright 2017, Mark Mayne contact at markmayne@ymail.com</small>
