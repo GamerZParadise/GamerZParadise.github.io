@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="mobileStyle.css">
+        <title>GamerZ Paradise</title>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="barItem" href="#">Systems &amp; Accessories</a>
+            <a class="barItem" href="#">Games</a>
+            <a class="barItem" href="#">Music &amp; Movies</a>
+            <a class="barItem" href="#">More</a>
+            <a class="barItem" href="#">Reserve &amp; Contact</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+        
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        <header class="heading">
+            <a href="http://www.gamerzparadise.net"><img src="GamerZ Paradise Logo.png" alt="Logo" width="319.875" height="103.5"></a>
+            </div>
+        </header>
+        <hr>
+        <div class="Slides">
+            <img class="mySlides" src="gamerzParadise.jpg" width=100%>
+            <img class="mySlides" src="Reviews.png" width=100%>
+            <img class="mySlides" src="gamerzParadiseSign.jpg" width=100%>
+        </div>
+        <script>
+            var slideIndex = 0;
+            carousel();
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1}
+                x[slideIndex-1].style.display = "block";
+                setTimeout(carousel, 5000); // Change image every 2 seconds
+            }
+        </script>
+        </div>
+        
+        <footer class="footing">
+            <small>&copy; Copyright 2017, Mark Mayne contact at markmayne@ymail.com</small>
+        </footer>
+    </body>
+</html>
