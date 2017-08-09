@@ -60,7 +60,8 @@
         
         
         $email_message .= "Email: ".clean_string($email_from)."\n";
-        $email_message .= "Message: ".clean_string(message)."\n";
+        $email_message .= "Subject: ".clean_string($subject)."\n";
+        $email_message .= "Message: ".clean_string($message)."\n";
         
 // create email headers
 $headers = 'From: '.$email_from."\r\n".
