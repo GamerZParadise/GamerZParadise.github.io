@@ -65,6 +65,55 @@ li a {
     padding: 8px 16px;
     text-decoration: none;
 }
+.contact{
+    color: white;
+}
+input[type=text] {
+    background-color: white;
+    box-shadow: 0 0px 0px transparent;
+    padding: 5px;
+    border: 3px solid #FFFFFF;
+    color: black;
+    margin: 0 0 5px;
+    width: 80%;
+    min-height: 36px;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+
+input[type=text]:focus {
+    border: 2px solid blue;
+}
+input[type=submit]{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    width: 80%;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type=submit]:focus{
+    border: 2px solid blue;
+}
+textarea{
+    background-color: white;
+    box-shadow: 0 0px 0px transparent;
+    padding: 5px;
+    border: 3px solid #FFFFFF;
+    color: black;
+    margin: 0 0 5px;
+    width: 80%;
+    min-height: 36px;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+textarea:focus{
+    border: 2px solid blue;
+}
+
 
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}

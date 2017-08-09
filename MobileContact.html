@@ -31,26 +31,20 @@
             </div>
         </header>
         <hr>
-        <div class="Slides">
-            <img class="mySlides" src="gamerzParadise.jpg" width=100%>
-            <img class="mySlides" src="Reviews.png" width=100%>
-            <img class="mySlides" src="gamerzParadiseSign.jpg" width=100%>
-        </div>
-        <script>
-            var slideIndex = 0;
-            carousel();
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > x.length) {slideIndex = 1}
-                x[slideIndex-1].style.display = "block";
-                setTimeout(carousel, 5000); // Change image every 2 seconds
-            }
-        </script>
+        <div class="contact">
+            <h1>Reserve &amp; Contact</h1>
+            <p>If you have an issue, concern or you want to reserve an item, please fill out the form below and we will hold your item for 48 hours. Feel free to contact us via phone at (410) 679-1136 or stop by our retail location. Our buisness hours are Thursday, Friday, Saturday, and Sunday from 10am till 5pm.</p>
+            
+            <form name="contactform" method="post" action="send_form_email.php">
+                <p>
+                <input type="text" placeholder="Email Address" name="email">
+                    <input type="text" placeholder="Subject" name="subject">
+                        </p>
+                        <p>
+                        <textarea name="message" placeholder="Message" rows="15"cols="40"></textarea>
+                        </p>
+                        <input type="submit"value="Submit">
+                            </form>
         </div>
         
         <footer class="footing">
