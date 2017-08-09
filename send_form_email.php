@@ -16,8 +16,7 @@
         
         
         // validation expected data exists
-        if(!isset($_POST['name']) ||
-           !isset($_POST['subject']) ||
+        if(!isset($_POST['subject']) ||
            !isset($_POST['email']) ||
            !isset($_POST['message'])) {
             died('We are sorry, but there appears to be a problem with the form you submitted.');
@@ -37,10 +36,6 @@
         }
         
         $string_exp = "/^[A-Za-z .'-]+$/";
-        
-        if(!preg_match($string_exp,$name)) {
-            $error_message .= 'The Name you entered does not appear to be valid.<br />';
-        }
         
         if(!preg_match($string_exp,$subject)) {
             $error_message .= 'The Subject you entered does not appear to be valid.<br />';
@@ -64,7 +59,6 @@
         
         
         
-        $email_message .= "First Name: ".clean_string($name)."\n";
         $email_message .= "Email: ".clean_string($email_from)."\n";
         $email_message .= "Message: ".clean_string(message)."\n";
         
