@@ -41,7 +41,7 @@
             $error_message .= 'The Subject you entered does not appear to be valid.<br />';
         }
         
-        if(strlen(message) < 2) {
+        if(strlen($message) < 2) {
             $error_message .= 'The Message you entered do not appear to be valid.<br />';
         }
         
