@@ -72,8 +72,15 @@ $headers = 'From: '.$email_from."\r\n".
 
 <!-- include your own success html here -->
 
+<html>
+<head>
+<meta http-equiv="refresh" content="3;url=http://www.somewhere.com/" />
+</head>
+<body>
 Thank you for contacting us. We will be in touch with you very soon.</br>
-
+Redirecting in 3 seconds...
+</body>
+</html>
 <meta http-equiv="refresh" content="3;url=http://www.gamerzparadise.net/" />
 
 <?php
