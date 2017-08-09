@@ -2,6 +2,9 @@ body{
     background-color: #818181;
     text-align: center;
 }
+.consoleList{
+    border: 1px solid #FFFFFF;
+}
 .sidebarButton{
     text-align: left;
 }
