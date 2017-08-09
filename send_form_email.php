@@ -3,7 +3,7 @@
         
         // EDIT THE 2 LINES BELOW AS REQUIRED
         $email_to = "markymark5127@gmail.com";
-        $email_subject = "hey";
+        $email_subject = "Reservation From The Website Message";
         
         function died($error) {
             // your error code can go here
@@ -72,7 +72,9 @@ $headers = 'From: '.$email_from."\r\n".
 
 <!-- include your own success html here -->
 
-Thank you for contacting us. We will be in touch with you very soon.
+Thank you for contacting us. We will be in touch with you very soon.</br>
+
+<meta http-equiv="refresh" content="3;url=http://www.gamerzparadise.net/" />
 
 <?php
     
